@@ -3,20 +3,23 @@
 header{
 
     .navbar{
-  .flex(space-around);
+  .flex(space-around, flex-start, row);
+  @media @max{
+    .flex(space-around, center, column)
+  }
   
     nav{
      width: 200px;
      height: 30px;
-    .flex(space-between, center);
+    .flex(space-between, center, row);
+    a{
+      text-decoration: none;
+      color: black
+    }
     }//nav
     }//navbar
   }//header
 
 button{
-    background-color: teal;
-    border-radius: 25px;
-    width: 60%;
-    color: white;
-    padding: 6px 6px;
+    .btn(@eastern-blue, white);
 }
